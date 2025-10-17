@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clario - The Offline CV Console</title>
+<style>
+body {
+font-family: sans-serif;
+background-color: #111;
+color: #eee;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0;
+padding: 2rem;
+}
+h1 {
+color: #4CAF50;
+}
+#video-container {
+width: 100%;
+max-width: 900px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 20px rgba(0, 255, 0, 0.2);
+margin-top: 1rem;
+}
+#video-feed {
+width: 100%;
+height: auto;
+display: block;
+}
+.info-text {
+margin-top: 1rem;
+font-size: 1.2rem;
+color: #999;
+}
+</style>
+</head>
+<body>
+<h1>Clario - The Offline CV Console</h1>
+<div class="info-text">Watching for pose and hand gestures...</div>
+<div id="video-container">
+<img id="video-feed" src="{{ url_for('video_feed') }}">
+</div>
+</body>
+</html>

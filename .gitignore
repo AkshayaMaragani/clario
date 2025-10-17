@@ -5,3 +5,4 @@ __pycache__/
 
 # Ignore local secrets and configuration
 .env
+*.avi
